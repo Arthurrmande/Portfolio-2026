@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Burgues Script";
+  src: url("/fonts/burgues-script.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@theme {
+  --color-purple: #6A00FF;
+  --color-black: #141414;
+  --color-white: #FFFFFF;
+
+  --font-archivo: "Archivo", sans-serif;
+  --font-burgues: "Burgues Script", cursive;
+  --font-instrument: "Instrument Serif", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #141414;
+  color: #FFFFFF;
+  font-family: "Archivo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: #141414;
+  color: #FFFFFF;
+  font-family: "Archivo", sans-serif;
+}
+
+button,
+a {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
