@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function ProjectCard({ project, position, onClick }) {
+  const navigate = useNavigate();
+
   const positions = {
     previous: {
       transform: "translate(-135%, -50%) rotateY(62deg)",
@@ -36,10 +40,19 @@ function ProjectCard({ project, position, onClick }) {
     },
   };
 
+  const handleClick = () => {
+    if (position === "active") {
+      navigate(`/projet/${project.id}`);
+      return;
+    }
+
+    onClick();
+  };
+
   return (
     <button
       type="button"
-      onClick={onClick}
+      onClick={handleClick}
       className="absolute left-1/2 top-1/2 aspect-square w-[68vw] max-w-[430px] shrink-0 cursor-pointer border-0 bg-transparent p-0 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] sm:w-[48vw] lg:w-[27vw]"
       style={{
         ...positions[position],

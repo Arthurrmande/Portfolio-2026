@@ -6,36 +6,39 @@ function Header() {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const sections = navigation
-      .map((item) => document.getElementById(item.id))
-      .filter(Boolean);
+    const handleScroll = () => {
+      const detectionPosition =
+        window.scrollY + window.innerHeight * 0.3;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.5,
-      }
-    );
+      let currentSection = "home";
 
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
+      navigation.forEach((item) => {
+        const section = document.getElementById(item.id);
+
+        if (!section) return;
+
+        if (section.offsetTop <= detectionPosition) {
+          currentSection = item.id;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
 
     return () => {
-      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
     };
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full px-6 py-6 lg:px-16 bg-black">
+    <header className="fixed top-0 left-0 z-50 w-full bg-black px-6 py-6 lg:px-16">
 
-      {/* Navigation desktop */}
       <nav className="hidden items-center justify-center gap-10 lg:flex">
         {navigation.map((item, index) => {
           const isActive = activeSection === item.id;
@@ -43,27 +46,47 @@ function Header() {
           return (
             <div key={item.id} className="flex items-center gap-10">
 
-              {/* Lien */}
               <a
                 href={item.href}
-                className={`group text-xs font-bold italic transition-colors duration-200 hover:text-[#6A00FF] ${isActive ? "text-[#6A00FF]" : "text-white"}`}
+                className="group"
               >
-                <span className={`transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}>
-                  [
-                </span>
+                <p
+                  className={`font-archivo text-xs font-bold italic transition-colors duration-200 group-hover:text-[#6A00FF] ${
+                    isActive ? "text-[#6A00FF]" : "text-white"
+                  }`}
+                >
+                  <span
+                    className={`transition-opacity duration-200 ${
+                      isActive
+                        ? "opacity-100"
+                        : "opacity-0 group-hover:opacity-100"
+                    }`}
+                  >
+                    [
+                  </span>
 
-                {" "}
-                {item.name}
-                {" "}
+                  {" "}
+                  {item.name}
+                  {" "}
 
-                <span className={`transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}>
-                  ]
-                </span>
+                  <span
+                    className={`transition-opacity duration-200 ${
+                      isActive
+                        ? "opacity-100"
+                        : "opacity-0 group-hover:opacity-100"
+                    }`}
+                  >
+                    ]
+                  </span>
+                </p>
               </a>
 
-              {/* Étoile entre les liens */}
               {index < navigation.length - 1 && (
-                <img src="/icons/icon_star.svg" alt="star" className="w-4 h-4"/>
+                <img
+                  src="/icons/icon_star.svg"
+                  alt="star"
+                  className="h-4 w-4"
+                />
               )}
 
             </div>
@@ -71,8 +94,6 @@ function Header() {
         })}
       </nav>
 
-
-      {/* Bouton menu mobile */}
       <button
         type="button"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -84,8 +105,6 @@ function Header() {
         <span className="h-px w-5 bg-white"></span>
       </button>
 
-
-      {/* Navigation mobile */}
       {menuOpen && (
         <nav className="absolute top-full left-0 flex w-full flex-col items-center gap-6 bg-black px-6 py-10 lg:hidden">
 
@@ -97,13 +116,17 @@ function Header() {
                 key={item.id}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className={`font-bold italic transition-colors duration-200 ${isActive ? "text-[#6A00FF]" : "text-white hover:text-[#6A00FF]"}`}
+                className="group"
               >
-                {isActive && "[ "}
-
-                {item.name}
-
-                {isActive && " ]"}
+                <p
+                  className={`font-archivo font-bold italic transition-colors duration-200 group-hover:text-[#6A00FF] ${
+                    isActive ? "text-[#6A00FF]" : "text-white"
+                  }`}
+                >
+                  {isActive && "[ "}
+                  {item.name}
+                  {isActive && " ]"}
+                </p>
               </a>
             );
           })}
