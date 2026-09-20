@@ -120,3 +120,36 @@ button {
     animation-play-state: paused;
   }
 }
+
+@keyframes jaeco-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.jaeco-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.jaeco-track {
+  display: flex;
+  width: max-content;
+  animation: jaeco-scroll 45s linear infinite;
+}
+
+@media (max-width: 640px) {
+  .jaeco-track {
+    animation-duration: 30s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jaeco-track {
+    animation-play-state: paused;
+  }
+}

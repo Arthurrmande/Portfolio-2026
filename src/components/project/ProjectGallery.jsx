@@ -1,4 +1,35 @@
 function ProjectGallery({ project }) {
+  if (project.gallery.type === "jaeco") {
+    return (
+      <section id="gallery" className="w-full overflow-hidden bg-black">
+
+        <div className="overflow-hidden py-16 sm:py-20 lg:py-28">
+
+          <div className="jaeco-marquee">
+            <div className="jaeco-track">
+
+              <img
+                src={project.gallery.overview}
+                alt="Vue d’ensemble des pages projets Jaéco"
+                className="h-[350px] w-auto max-w-none flex-none object-contain sm:h-[500px] lg:h-[700px]"
+              />
+
+              <img
+                src={project.gallery.overview}
+                alt=""
+                aria-hidden="true"
+                className="h-[350px] w-auto max-w-none flex-none object-contain sm:h-[500px] lg:h-[700px]"
+              />
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    );
+  }
+
   if (project.gallery.type === "cards") {
     const cards = project.gallery.cards;
     const cards2 = project.gallery.cards2;

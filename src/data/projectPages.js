@@ -127,6 +127,10 @@ const projectPages = [
     },
   },
 
+
+
+
+
   {
     id: 2,
     number: "02",
@@ -218,6 +222,9 @@ const projectPages = [
       },
     },
   },
+
+
+
 
   {
     id: 3,
@@ -378,6 +385,44 @@ const projectPages = [
       ],
     },
   },
+
+
+
+  {
+  id: 4,
+  number: "04",
+  title: "PAGE PROJET JAÉCO",
+
+  context: {
+    identity: "Conception des pages projets du site de l’agence Jaéco",
+
+    client: "Mission réalisée en stage",
+
+    description:
+      "Conception et intégration des pages projets du site de Jaéco à partir des contenus réalisés par l’agence. Mon travail consistait à sélectionner, organiser et mettre en valeur les différents éléments de chaque projet afin de construire des études de cas cohérentes et attractives.",
+
+    challenge:
+      "Adapter une même structure de page à des projets aux univers et aux contenus très différents, tout en conservant une présentation cohérente à l’échelle du site. Lorsque certains contenus manquaient pour mettre en valeur un projet, j’ai également réalisé des supports complémentaires comme des mockups, des compositions graphiques ou de courtes animations.",
+  },
+
+  software: [
+    "Figma",
+    "Illustrator",
+    "Photoshop",
+    "After effects",
+  ],
+
+  domains: [
+    "Web design",
+    "UI design",
+    "Motion design",
+  ],
+
+  gallery: {
+    type: "jaeco",
+    overview: "/projects/project_04/pages_projets.png",
+  },
+},
 ];
 
 export default projectPages;
