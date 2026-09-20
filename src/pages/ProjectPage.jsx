@@ -34,7 +34,11 @@ function ProjectPage() {
       <main className="bg-black">
         <ProjectHero project={project} />
         <ProjectContext project={project} />
-        <ProjectIdentity project={project} />
+
+        {project.identity && (
+          <ProjectIdentity project={project} />
+        )}
+
         <ProjectGallery project={project} />
 
         <div className="h-[120px] bg-gradient-to-b from-white to-[#6A00FF] sm:h-[150px] lg:h-[180px]"></div>

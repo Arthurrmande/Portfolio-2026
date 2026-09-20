@@ -2,12 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
 @import "tailwindcss";
 
 @font-face {
   font-family: "Burgues Script";
   src: url("/fonts/burgues-script.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cooper Black";
+  src: url("/fonts/cooper-black.TTF") format("opentype");
   font-style: normal;
   font-weight: 400;
 }
@@ -22,6 +28,22 @@
   --font-instrument: "Instrument Serif", serif;
   --font-roboto: "Roboto", sans-serif;
   --font-roboto-condensed: "Roboto Condensed", sans-serif;
+  --font-cooper: "Cooper Black", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #141414;
+  color: #FFFFFF;
+  font-family: "Archivo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -36,10 +58,6 @@ body {
   font-family: "Archivo", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 button,
 a {
   color: inherit;
@@ -51,4 +69,54 @@ a {
 
 button {
   font: inherit;
+}
+
+
+@keyframes project-cards-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes project-cards-scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.project-cards-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-cards-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  animation: project-cards-scroll 60s linear infinite;
+}
+
+.project-cards-track-reverse {
+  animation-name: project-cards-scroll-reverse;
+}
+
+@media (max-width: 640px) {
+  .project-cards-track {
+    gap: 16px;
+    animation-duration: 50s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-cards-track {
+    animation-play-state: paused;
+  }
 }

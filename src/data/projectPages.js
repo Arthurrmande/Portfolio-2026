@@ -126,6 +126,258 @@ const projectPages = [
       ],
     },
   },
+
+  {
+    id: 2,
+    number: "02",
+    title: "ÉTIQUETTE DE BIÈRE",
+
+    context: {
+      identity: "Création d’une étiquette de bière artisanale",
+      client: "Projet réalisé en stage",
+      description:
+        "Dans le cadre d’une activité interne organisée pendant mon stage, nous avons brassé notre propre bière. J’ai ensuite conçu son identité graphique à travers la création d’une étiquette destinée à habiller la bouteille.",
+      challenge:
+        "Concevoir une étiquette originale adaptée au format d’une bouteille de bière, tout en travaillant la hiérarchie des informations, la lisibilité et les contraintes liées à un support imprimé.",
+    },
+
+    software: [
+      "Illustrator",
+    ],
+
+    domains: [
+      "Print design",
+      "Identité visuelle",
+    ],
+
+    identity: {
+      description:
+        "L’étiquette s’inscrit dans l’univers graphique de Jaéco. La création reprend certains codes visuels de l’agence afin de conserver une cohérence avec son identité, tout en développant un univers propre à la bière.",
+
+      fonts: [
+        {
+          name: "ARCHIVO",
+          className: "font-archivo",
+          alphabet:
+            "Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz",
+        },
+      ],
+
+      colors: [
+        {
+          hex: "#F6383F",
+          rgb: "r 246 / v 56 / b 63",
+          name: "Red",
+        },
+        {
+          hex: "#1A1A18",
+          rgb: "r 26 / v 26 / b 24",
+          name: "Black",
+        },
+        {
+          hex: "#FBFBFB",
+          rgb: "r 251 / v 251 / b 251",
+          name: "White",
+        },
+      ],
+
+      patterns: [
+        "/projects/project_02/pattern_carreau.png",
+        "/projects/project_02/pattern_coeur.png",
+        "/projects/project_02/pattern_pique.png",
+        "/projects/project_02/pattern_trefle.png",
+      ],
+    },
+
+    gallery: {
+      type: "beer",
+
+      posters: [
+        "/projects/project_02/affiche_01.png",
+        "/projects/project_02/affiche_02.png",
+      ],
+
+      bottles: {
+        white: [
+          "/projects/project_02/bottle_BGauche.png",
+          "/projects/project_02/bottle_BMilieu.png",
+          "/projects/project_02/bottle_BDroit.png",
+        ],
+
+        black: [
+          "/projects/project_02/bottle_NGauche.png",
+          "/projects/project_02/bottle_NMilieu.png",
+          "/projects/project_02/bottle_NDroit.png",
+        ],
+
+        red: [
+          "/projects/project_02/bottle_RGauche.png",
+          "/projects/project_02/bottle_RMilieu.png",
+          "/projects/project_02/bottle_RDroit.png",
+        ],
+      },
+    },
+  },
+
+  {
+    id: 3,
+    number: "03",
+    title: "JEU DE CARTES",
+
+    context: {
+      identity:
+        "Création d’un jeu de cartes de mémorisation sur les mouvements artistiques",
+      client: "Projet universitaire",
+      description:
+        "Concevoir l’identité graphique d’un jeu de mémoire consacré aux grands mouvements artistiques et graphiques du XXe siècle. Le jeu repose sur l’association entre des cartes « Mouvement » et des cartes « Artiste », à travers des illustrations, des œuvres emblématiques et différents indices.",
+      challenge:
+        "Créer un système graphique cohérent permettant de différencier les mouvements artistiques tout en conservant une forte unité visuelle sur l’ensemble des cartes. Chaque illustration devait évoquer les caractéristiques du mouvement représenté tout en restant intégrée à l’univers graphique du jeu.",
+    },
+
+    software: [
+      "Illustrator",
+    ],
+
+    domains: [
+      "Illustration",
+      "Print design",
+      "Identité visuelle",
+    ],
+
+    identity: {
+      type: "cards",
+
+      fonts: [
+        {
+          name: "COOPER BLACK",
+          className: "font-cooper",
+          alphabet:
+            "Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz",
+        },
+      ],
+
+      colors: [
+        {
+          hex: "#E12114",
+          rgb: "r 225 / v 33 / b 20",
+          name: "Burnt Tangerine",
+        },
+        {
+          hex: "#0D7CB1",
+          rgb: "r 13 / v 124 / b 177",
+          name: "Cerulean",
+        },
+        {
+          hex: "#AF66A6",
+          rgb: "r 175 / v 102 / b 166",
+          name: "Petal Pink",
+        },
+        {
+          hex: "#6E8D2C",
+          rgb: "r 110 / v 141 / b 44",
+          name: "Forest Moss",
+        },
+        {
+          hex: "#DECB19",
+          rgb: "r 222 / v 203 / b 25",
+          name: "Golden Glow",
+        },
+        {
+          hex: "#334A9A",
+          rgb: "r 51 / v 74 / b 154",
+          name: "French Blue",
+        },
+        {
+          hex: "#DE1B7B",
+          rgb: "r 222 / v 27 / b 123",
+          name: "Fuchsia Flame",
+        },
+        {
+          hex: "#59B031",
+          rgb: "r 89 / v 176 / b 49",
+          name: "Bright Fern",
+        },
+        {
+          hex: "#714394",
+          rgb: "r 113 / v 67 / b 148",
+          name: "Rebecca Purple",
+        },
+        {
+          hex: "#DEA517",
+          rgb: "r 222 / v 165 / b 23",
+          name: "Goldenrod",
+        },
+        {
+          hex: "#58BFC6",
+          rgb: "r 88 / v 191 / b 198",
+          name: "Strong Cyan",
+        },
+        {
+          hex: "#B9CE00",
+          rgb: "r 185 / v 206 / b 0",
+          name: "Lemon Lime",
+        },
+        {
+          hex: "#DE6B18",
+          rgb: "r 222 / v 107 / b 24",
+          name: "Chocolate",
+        },
+        {
+          hex: "#335AA6",
+          rgb: "r 51 / v 90 / b 166",
+          name: "Sapphire",
+        },
+        {
+          hex: "#7B4494",
+          rgb: "r 123 / v 68 / b 148",
+          name: "Deep Lilac",
+        },
+      ],
+    },
+
+    gallery: {
+      type: "cards",
+
+      mockups: [
+        "/projects/project_03/mockup_cartes_01.png",
+        "/projects/project_03/mockup_cartes_02.png",
+      ],
+
+      cards: [
+        "/projects/project_03/Carte 1 recto.png",
+        "/projects/project_03/Carte 2 verso.png",
+        "/projects/project_03/Carte 3 verso.png",
+        "/projects/project_03/Carte 4 recto.png",
+        "/projects/project_03/Carte 5 verso.png",
+        "/projects/project_03/Carte 6 recto.png",
+        "/projects/project_03/Carte 7 recto.png",
+        "/projects/project_03/Carte 8 recto.png",
+        "/projects/project_03/Carte 9 recto.png",
+        "/projects/project_03/Carte 10 verso.png",
+        "/projects/project_03/Carte 11 recto.png",
+        "/projects/project_03/Carte 12 verso.png",
+        "/projects/project_03/Carte 13 verso.png",
+        "/projects/project_03/Carte 14 verso.png",
+        "/projects/project_03/Carte 15 recto.png",
+      ],
+
+      cards2: [
+        "/projects/project_03/Carte2 2 recto.png",
+        "/projects/project_03/Carte2 3 verso.png",
+        "/projects/project_03/Carte2 4 verso.png",
+        "/projects/project_03/Carte2 5 recto.png",
+        "/projects/project_03/Carte2 6 recto.png",
+        "/projects/project_03/Carte2 7 recto.png",
+        "/projects/project_03/Carte2 8 recto.png",
+        "/projects/project_03/Carte2 9 verso.png",
+        "/projects/project_03/Carte2 10 verso.png",
+        "/projects/project_03/Carte2 11 verso.png",
+        "/projects/project_03/Carte2 12 recto.png",
+        "/projects/project_03/Carte2 13 recto.png",
+        "/projects/project_03/Carte2 14 verso.png",
+      ],
+    },
+  },
 ];
 
 export default projectPages;
