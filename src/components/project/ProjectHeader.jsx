@@ -5,6 +5,7 @@ function ProjectHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const navigate = useNavigate();
+  const base = import.meta.env.BASE_URL;
 
   const navigation = [
     { id: "hero", name: "ACCUEIL", href: "/" },
@@ -151,7 +152,7 @@ function ProjectHeader() {
 
               {index < navigation.length - 1 && (
                 <img
-                  src="/icons/icon_star.svg"
+                  src={`${base}icons/icon_star.svg`}
                   alt="star"
                   className="h-4 w-4"
                 />

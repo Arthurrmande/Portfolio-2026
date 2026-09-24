@@ -1,4 +1,5 @@
 function Domains() {
+  const base = import.meta.env.BASE_URL;
   return (
     <section id="domains" className="relative bg-black px-6 pt-32 pb-48 lg:px-20 lg:pt-40 lg:pb-64">
 
@@ -81,7 +82,7 @@ function Domains() {
 
           {/* Diagramme */}
           <div className="flex justify-center lg:justify-end">
-            <img src="/images/diagramme.png" alt="Diagramme représentant mes compétences" className="w-full max-w-[320px] lg:max-w-[430px]" />
+            <img src={`${base}/images/diagramme.png`} alt="Diagramme représentant mes compétences" className="w-full max-w-[320px] lg:max-w-[430px]" />
           </div>
 
         </div>

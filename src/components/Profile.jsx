@@ -2,6 +2,7 @@ import profile from "../data/profile";
 import software from "../data/software";
 
 function Profile() {
+  const base = import.meta.env.BASE_URL;
   return (
     <section id="profile" className="relative bg-black px-6 py-24 lg:px-20 lg:py-32">
 
@@ -62,7 +63,7 @@ function Profile() {
           <div className="flex flex-col items-center">
 
             {/* Spider-Man */}
-            <img src="/images/logo_spiderman.png" alt="Logo Spider-Man" className="w-[220px] sm:w-[280px] lg:w-[430px]" />
+            <img src={`${base}/images/logo_spiderman.png`} alt="Logo Spider-Man" className="w-[220px] sm:w-[280px] lg:w-[430px]" />
 
 
             {/* Logiciels */}

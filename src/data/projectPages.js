@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 const projectPages = [
   {
     id: 1,
@@ -102,34 +104,30 @@ const projectPages = [
 
     gallery: {
       top: [
-        "/projects/project_01/site smash.png",
-        "/projects/project_01/site smash panier.png",
+        `${base}projects/project_01/site smash.png`,
+        `${base}projects/project_01/site smash panier.png`,
       ],
 
       video: "https://www.youtube.com/embed/egZNkMQG5Oc",
 
       objects: [
-        "/projects/project_01/image 67.png",
-        "/projects/project_01/image 63.png",
-        "/projects/project_01/image 61.png",
-        "/projects/project_01/0001 1.png",
-        "/projects/project_01/image 66.png",
-        "/projects/project_01/image 64.png",
+        `${base}projects/project_01/image 67.png`,
+        `${base}projects/project_01/image 63.png`,
+        `${base}projects/project_01/image 61.png`,
+        `${base}projects/project_01/0001 1.png`,
+        `${base}projects/project_01/image 66.png`,
+        `${base}projects/project_01/image 64.png`,
       ],
 
       bottom: [
-        "/projects/project_01/Post.png",
-        "/projects/project_01/Post2.png",
-        "/projects/project_01/Post3.png",
-        "/projects/project_01/Post5.png",
-        "/projects/project_01/Post4.png",
+        `${base}projects/project_01/Post.png`,
+        `${base}projects/project_01/Post2.png`,
+        `${base}projects/project_01/Post3.png`,
+        `${base}projects/project_01/Post5.png`,
+        `${base}projects/project_01/Post4.png`,
       ],
     },
   },
-
-
-
-
 
   {
     id: 2,
@@ -145,14 +143,9 @@ const projectPages = [
         "Concevoir une étiquette originale adaptée au format d’une bouteille de bière, tout en travaillant la hiérarchie des informations, la lisibilité et les contraintes liées à un support imprimé.",
     },
 
-    software: [
-      "Illustrator",
-    ],
+    software: ["Illustrator"],
 
-    domains: [
-      "Print design",
-      "Identité visuelle",
-    ],
+    domains: ["Print design", "Identité visuelle"],
 
     identity: {
       description:
@@ -186,10 +179,10 @@ const projectPages = [
       ],
 
       patterns: [
-        "/projects/project_02/pattern_carreau.png",
-        "/projects/project_02/pattern_coeur.png",
-        "/projects/project_02/pattern_pique.png",
-        "/projects/project_02/pattern_trefle.png",
+        `${base}projects/project_02/pattern_carreau.png`,
+        `${base}projects/project_02/pattern_coeur.png`,
+        `${base}projects/project_02/pattern_pique.png`,
+        `${base}projects/project_02/pattern_trefle.png`,
       ],
     },
 
@@ -197,34 +190,31 @@ const projectPages = [
       type: "beer",
 
       posters: [
-        "/projects/project_02/affiche_01.png",
-        "/projects/project_02/affiche_02.png",
+        `${base}projects/project_02/affiche_01.png`,
+        `${base}projects/project_02/affiche_02.png`,
       ],
 
       bottles: {
         white: [
-          "/projects/project_02/bottle_BGauche.png",
-          "/projects/project_02/bottle_BMilieu.png",
-          "/projects/project_02/bottle_BDroit.png",
+          `${base}projects/project_02/bottle_BGauche.png`,
+          `${base}projects/project_02/bottle_BMilieu.png`,
+          `${base}projects/project_02/bottle_BDroit.png`,
         ],
 
         black: [
-          "/projects/project_02/bottle_NGauche.png",
-          "/projects/project_02/bottle_NMilieu.png",
-          "/projects/project_02/bottle_NDroit.png",
+          `${base}projects/project_02/bottle_NGauche.png`,
+          `${base}projects/project_02/bottle_NMilieu.png`,
+          `${base}projects/project_02/bottle_NDroit.png`,
         ],
 
         red: [
-          "/projects/project_02/bottle_RGauche.png",
-          "/projects/project_02/bottle_RMilieu.png",
-          "/projects/project_02/bottle_RDroit.png",
+          `${base}projects/project_02/bottle_RGauche.png`,
+          `${base}projects/project_02/bottle_RMilieu.png`,
+          `${base}projects/project_02/bottle_RDroit.png`,
         ],
       },
     },
   },
-
-
-
 
   {
     id: 3,
@@ -241,15 +231,9 @@ const projectPages = [
         "Créer un système graphique cohérent permettant de différencier les mouvements artistiques tout en conservant une forte unité visuelle sur l’ensemble des cartes. Chaque illustration devait évoquer les caractéristiques du mouvement représenté tout en restant intégrée à l’univers graphique du jeu.",
     },
 
-    software: [
-      "Illustrator",
-    ],
+    software: ["Illustrator"],
 
-    domains: [
-      "Illustration",
-      "Print design",
-      "Identité visuelle",
-    ],
+    domains: ["Illustration", "Print design", "Identité visuelle"],
 
     identity: {
       type: "cards",
@@ -346,83 +330,81 @@ const projectPages = [
       type: "cards",
 
       mockups: [
-        "/projects/project_03/mockup_cartes_01.png",
-        "/projects/project_03/mockup_cartes_02.png",
+        `${base}projects/project_03/mockup_cartes_01.png`,
+        `${base}projects/project_03/mockup_cartes_02.png`,
       ],
 
       cards: [
-        "/projects/project_03/Carte 1 recto.png",
-        "/projects/project_03/Carte 2 verso.png",
-        "/projects/project_03/Carte 3 verso.png",
-        "/projects/project_03/Carte 4 recto.png",
-        "/projects/project_03/Carte 5 verso.png",
-        "/projects/project_03/Carte 6 recto.png",
-        "/projects/project_03/Carte 7 recto.png",
-        "/projects/project_03/Carte 8 recto.png",
-        "/projects/project_03/Carte 9 recto.png",
-        "/projects/project_03/Carte 10 verso.png",
-        "/projects/project_03/Carte 11 recto.png",
-        "/projects/project_03/Carte 12 verso.png",
-        "/projects/project_03/Carte 13 verso.png",
-        "/projects/project_03/Carte 14 verso.png",
-        "/projects/project_03/Carte 15 recto.png",
+        `${base}projects/project_03/Carte 1 recto.png`,
+        `${base}projects/project_03/Carte 2 verso.png`,
+        `${base}projects/project_03/Carte 3 verso.png`,
+        `${base}projects/project_03/Carte 4 recto.png`,
+        `${base}projects/project_03/Carte 5 verso.png`,
+        `${base}projects/project_03/Carte 6 recto.png`,
+        `${base}projects/project_03/Carte 7 recto.png`,
+        `${base}projects/project_03/Carte 8 recto.png`,
+        `${base}projects/project_03/Carte 9 recto.png`,
+        `${base}projects/project_03/Carte 10 verso.png`,
+        `${base}projects/project_03/Carte 11 recto.png`,
+        `${base}projects/project_03/Carte 12 verso.png`,
+        `${base}projects/project_03/Carte 13 verso.png`,
+        `${base}projects/project_03/Carte 14 verso.png`,
+        `${base}projects/project_03/Carte 15 recto.png`,
       ],
 
       cards2: [
-        "/projects/project_03/Carte2 2 recto.png",
-        "/projects/project_03/Carte2 3 verso.png",
-        "/projects/project_03/Carte2 4 verso.png",
-        "/projects/project_03/Carte2 5 recto.png",
-        "/projects/project_03/Carte2 6 recto.png",
-        "/projects/project_03/Carte2 7 recto.png",
-        "/projects/project_03/Carte2 8 recto.png",
-        "/projects/project_03/Carte2 9 verso.png",
-        "/projects/project_03/Carte2 10 verso.png",
-        "/projects/project_03/Carte2 11 verso.png",
-        "/projects/project_03/Carte2 12 recto.png",
-        "/projects/project_03/Carte2 13 recto.png",
-        "/projects/project_03/Carte2 14 verso.png",
+        `${base}projects/project_03/Carte2 2 recto.png`,
+        `${base}projects/project_03/Carte2 3 verso.png`,
+        `${base}projects/project_03/Carte2 4 verso.png`,
+        `${base}projects/project_03/Carte2 5 recto.png`,
+        `${base}projects/project_03/Carte2 6 recto.png`,
+        `${base}projects/project_03/Carte2 7 recto.png`,
+        `${base}projects/project_03/Carte2 8 recto.png`,
+        `${base}projects/project_03/Carte2 9 verso.png`,
+        `${base}projects/project_03/Carte2 10 verso.png`,
+        `${base}projects/project_03/Carte2 11 verso.png`,
+        `${base}projects/project_03/Carte2 12 recto.png`,
+        `${base}projects/project_03/Carte2 13 recto.png`,
+        `${base}projects/project_03/Carte2 14 verso.png`,
       ],
     },
   },
 
-
-
   {
-  id: 4,
-  number: "04",
-  title: "PAGE PROJET JAÉCO",
+    id: 4,
+    number: "04",
+    title: "PAGE PROJET JAÉCO",
 
-  context: {
-    identity: "Conception des pages projets du site de l’agence Jaéco",
+    context: {
+      identity: "Conception des pages projets du site de l’agence Jaéco",
 
-    client: "Mission réalisée en stage",
+      client: "Mission réalisée en stage",
 
-    description:
-      "Conception et intégration des pages projets du site de Jaéco à partir des contenus réalisés par l’agence. Mon travail consistait à sélectionner, organiser et mettre en valeur les différents éléments de chaque projet afin de construire des études de cas cohérentes et attractives.",
+      description:
+        "Conception et intégration des pages projets du site de Jaéco à partir des contenus réalisés par l’agence. Mon travail consistait à sélectionner, organiser et mettre en valeur les différents éléments de chaque projet afin de construire des études de cas cohérentes et attractives.",
 
-    challenge:
-      "Adapter une même structure de page à des projets aux univers et aux contenus très différents, tout en conservant une présentation cohérente à l’échelle du site. Lorsque certains contenus manquaient pour mettre en valeur un projet, j’ai également réalisé des supports complémentaires comme des mockups, des compositions graphiques ou de courtes animations.",
+      challenge:
+        "Adapter une même structure de page à des projets aux univers et aux contenus très différents, tout en conservant une présentation cohérente à l’échelle du site. Lorsque certains contenus manquaient pour mettre en valeur un projet, j’ai également réalisé des supports complémentaires comme des mockups, des compositions graphiques ou de courtes animations.",
+    },
+
+    software: [
+      "Figma",
+      "Illustrator",
+      "Photoshop",
+      "After effects",
+    ],
+
+    domains: [
+      "Web design",
+      "UI design",
+      "Motion design",
+    ],
+
+    gallery: {
+      type: "jaeco",
+      overview: `${base}projects/project_04/pages_projets.png`,
+    },
   },
-
-  software: [
-    "Figma",
-    "Illustrator",
-    "Photoshop",
-    "After effects",
-  ],
-
-  domains: [
-    "Web design",
-    "UI design",
-    "Motion design",
-  ],
-
-  gallery: {
-    type: "jaeco",
-    overview: "/projects/project_04/pages_projets.png",
-  },
-},
 ];
 
 export default projectPages;

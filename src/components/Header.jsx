@@ -4,6 +4,7 @@ import navigation from "../data/navigation";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const base = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -83,7 +84,7 @@ function Header() {
 
               {index < navigation.length - 1 && (
                 <img
-                  src="/icons/icon_star.svg"
+                  src={`${base}/icons/icon_star.svg`}
                   alt="star"
                   className="h-4 w-4"
                 />

@@ -1,4 +1,6 @@
 function Contact() {
+  const base = import.meta.env.BASE_URL;
+
   return (
     <section id="contact" className="relative bg-white text-black">
 
@@ -36,13 +38,13 @@ function Contact() {
         <div className="mb-16 flex flex-col items-start gap-[35px] sm:mb-20 lg:absolute lg:left-[5%] lg:top-[70px] lg:mb-0 lg:gap-[60px]">
 
           <img
-            src="/images/micrographisme_01.png"
+            src={`${base}images/micrographisme_01.png`}
             alt=""
             className="h-auto w-[22px] sm:w-[24px] lg:w-[28px]"
           />
 
           <img
-            src="/images/micrographisme_02.png"
+            src={`${base}images/micrographisme_02.png`}
             alt=""
             className="h-auto w-[22px] sm:w-[24px] lg:w-[28px]"
           />
@@ -55,7 +57,7 @@ function Contact() {
 
           {/* Spider-Man */}
           <img
-            src="/images/logo_spiderman.png"
+            src={`${base}images/logo_spiderman.png`}
             alt="Logo Spider-Man"
             className="mb-[32px] h-auto w-[115px] object-contain sm:w-[130px] lg:mb-[42px] lg:w-[155px]"
           />

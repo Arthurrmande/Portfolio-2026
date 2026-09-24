@@ -1,4 +1,5 @@
 function ProjectHero({ project }) {
+  const base = import.meta.env.BASE_URL;
   return (
     <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black px-6 text-white">
 
@@ -20,7 +21,7 @@ function ProjectHero({ project }) {
           Arthur
         </p>
 
-        <img src="/icons/icon_planete.svg" alt="" className="h-4 w-4" />
+        <img src={`${base}icons/icon_planete.svg`} alt="" className="h-4 w-4" />
       </div>
 
       <div className="absolute right-[5%] top-1/2 hidden -translate-y-1/2 flex-col items-center gap-1 lg:flex">
@@ -28,7 +29,7 @@ function ProjectHero({ project }) {
           Mandé
         </p>
 
-        <img src="/icons/icon_planete.svg" alt="" className="h-4 w-4" />
+        <img src={`${base}icons/icon_planete.svg`} alt="" className="h-4 w-4" />
       </div>
 
       <a href="#project-context" className="absolute bottom-[8%] left-1/2 flex -translate-x-1/2 flex-col items-center gap-2">

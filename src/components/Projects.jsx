@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
   const dragStart = useRef(null);
+  const base = import.meta.env.BASE_URL;
 
   const previousProject = () => {
     setActiveIndex((current) =>
@@ -93,7 +94,7 @@ function Projects() {
       <div
         className="absolute left-0 top-0 h-[850px] w-full sm:h-[950px] lg:h-[1050px]"
         style={{
-          backgroundImage: "url('/images/background_projects.png')",
+          backgroundImage: `url('${base}images/background_projects.png')`,
           backgroundSize: "100% auto",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",

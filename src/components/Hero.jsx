@@ -1,4 +1,5 @@
 function Hero() {
+  const base = import.meta.env.BASE_URL;
   return (
     <section
       id="home"
@@ -11,7 +12,7 @@ function Hero() {
           Arthur
         </p>
 
-        <img src="/icons/icon_planete.svg" alt="planete" className="w-4 h-4"/>
+        <img src={`${base}/icons/icon_planete.svg`} alt="planete" className="w-4 h-4"/>
       </div>
 
 
@@ -24,7 +25,7 @@ function Hero() {
             Arthur
           </p>
 
-          <img src="/icons/icon_planete.svg" alt="planete" className="w-4 h-4"/>
+          <img src={`${base}/icons/icon_planete.svg`} alt="planete" className="w-4 h-4"/>
         </div>
 
 
@@ -50,7 +51,7 @@ function Hero() {
             Mandé
           </p>
 
-          <img src="/icons/icon_planete.svg" alt="planete" className="w-4 h-4"/>
+          <img src={`${base}/icons/icon_planete.svg`} alt="planete" className="w-4 h-4"/>
         </div>
 
       </div>
@@ -62,7 +63,7 @@ function Hero() {
           Mandé
         </p>
 
-        <img src="/icons/icon_planete.svg" alt="planete" className="w-4 h-4"/>
+        <img src={`${base}/icons/icon_planete.svg`} alt="planete" className="w-4 h-4"/>
       </div>
 
 

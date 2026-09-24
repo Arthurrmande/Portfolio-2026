@@ -1,35 +1,44 @@
+const base = import.meta.env.BASE_URL;
+
 const software = [
   {
     name: "Figma",
-    icon: "/icons/icon_figma.svg",
+    icon: `${base}icons/icon_figma.svg`,
   },
+
   {
     name: "Illustrator",
-    icon: "/icons/icon_illustrator.svg",
+    icon: `${base}icons/icon_illustrator.svg`,
   },
+
   {
     name: "After Effects",
-    icon: "/icons/icon_aftereffects.svg",
+    icon: `${base}icons/icon_aftereffects.svg`,
   },
+
   {
     name: "Premiere Pro",
-    icon: "/icons/icon_premierpro.svg",
+    icon: `${base}icons/icon_premierpro.svg`,
   },
+
   {
     name: "Photoshop",
-    icon: "/icons/icon_photoshop.svg",
+    icon: `${base}icons/icon_photoshop.svg`,
   },
+
   {
     name: "GitHub",
-    icon: "/icons/icon_github.svg",
+    icon: `${base}icons/icon_github.svg`,
   },
+
   {
     name: "Blender",
-    icon: "/icons/icon_blender.svg",
+    icon: `${base}icons/icon_blender.svg`,
   },
+
   {
     name: "Wordpress",
-    icon: "/icons/icon_wordpress.svg",
+    icon: `${base}icons/icon_wordpress.svg`,
   },
 ];
 
