@@ -1,26 +1,41 @@
 const navigation = [
   {
-    name: "ACCUEIL",
+    name: {
+      fr: "ACCUEIL",
+      en: "HOME",
+    },
     href: "#home",
     id: "home",
   },
   {
-    name: "QUI JE SUIS ?",
+    name: {
+      fr: "QUI JE SUIS ?",
+      en: "ABOUT ME",
+    },
     href: "#profile",
     id: "profile",
   },
   {
-    name: "DOMAINES",
+    name: {
+      fr: "DOMAINES",
+      en: "AREAS",
+    },
     href: "#domains",
     id: "domains",
   },
   {
-    name: "PROJETS",
+    name: {
+      fr: "PROJETS",
+      en: "PROJECTS",
+    },
     href: "#projects",
     id: "projects",
   },
   {
-    name: "CONTACT",
+    name: {
+      fr: "CONTACT",
+      en: "CONTACT",
+    },
     href: "#contact",
     id: "contact",
   },

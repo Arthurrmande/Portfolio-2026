@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import navigation from "../data/navigation";
+import { useLanguage } from "../context/LanguageContext";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const { language, toggleLanguage } = useLanguage();
   const base = import.meta.env.BASE_URL;
 
   useEffect(() => {
@@ -37,8 +39,39 @@ function Header() {
     };
   }, []);
 
+  const LanguageToggle = () => (
+    <button
+      type="button"
+      onClick={toggleLanguage}
+      aria-label={language === "fr" ? "Passer en anglais" : "Switch to French"}
+      className="relative flex h-[26px] w-[58px] shrink-0 items-center rounded-full border border-white/30 bg-white/5 p-[2px] transition-colors duration-300 hover:border-[#6A00FF]"
+    >
+      <span
+        className={`absolute left-[2px] top-[2px] h-[20px] w-[26px] rounded-full bg-[#6A00FF] transition-transform duration-300 ${
+          language === "fr" ? "translate-x-0" : "translate-x-[26px]"
+        }`}
+      ></span>
+
+      <span
+        className={`relative z-10 flex w-1/2 items-center justify-center font-archivo text-[8px] font-bold transition-colors duration-300 ${
+          language === "fr" ? "text-white" : "text-white/40"
+        }`}
+      >
+        FR
+      </span>
+
+      <span
+        className={`relative z-10 flex w-1/2 items-center justify-center font-archivo text-[8px] font-bold transition-colors duration-300 ${
+          language === "en" ? "text-white" : "text-white/40"
+        }`}
+      >
+        EN
+      </span>
+    </button>
+  );
+
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-black px-6 py-6 lg:px-16">
+    <header className="fixed left-0 top-0 z-50 w-full bg-black px-6 py-6 lg:px-16">
 
       <nav className="hidden items-center justify-center gap-10 lg:flex">
         {navigation.map((item, index) => {
@@ -67,7 +100,7 @@ function Header() {
                   </span>
 
                   {" "}
-                  {item.name}
+                  {item.name[language]}
                   {" "}
 
                   <span
@@ -84,8 +117,8 @@ function Header() {
 
               {index < navigation.length - 1 && (
                 <img
-                  src={`${base}/icons/icon_star.svg`}
-                  alt="star"
+                  src={`${base}icons/icon_star.svg`}
+                  alt=""
                   className="h-4 w-4"
                 />
               )}
@@ -93,21 +126,29 @@ function Header() {
             </div>
           );
         })}
+
+        <LanguageToggle />
       </nav>
 
-      <button
-        type="button"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Ouvrir le menu"
-        className="ml-auto flex flex-col gap-1.5 lg:hidden"
-      >
-        <span className="h-px w-5 bg-white"></span>
-        <span className="h-px w-5 bg-white"></span>
-        <span className="h-px w-5 bg-white"></span>
-      </button>
+      <div className="ml-auto flex items-center justify-end gap-6 lg:hidden">
+
+        <LanguageToggle />
+
+        <button
+          type="button"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={language === "fr" ? "Ouvrir le menu" : "Open menu"}
+          className="flex flex-col gap-1.5"
+        >
+          <span className="h-px w-5 bg-white"></span>
+          <span className="h-px w-5 bg-white"></span>
+          <span className="h-px w-5 bg-white"></span>
+        </button>
+
+      </div>
 
       {menuOpen && (
-        <nav className="absolute top-full left-0 flex w-full flex-col items-center gap-6 bg-black px-6 py-10 lg:hidden">
+        <nav className="absolute left-0 top-full flex w-full flex-col items-center gap-6 bg-black px-6 py-10 lg:hidden">
 
           {navigation.map((item) => {
             const isActive = activeSection === item.id;
@@ -125,7 +166,7 @@ function Header() {
                   }`}
                 >
                   {isActive && "[ "}
-                  {item.name}
+                  {item.name[language]}
                   {isActive && " ]"}
                 </p>
               </a>

@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import projects from "../data/projects";
 import ProjectCard from "./ProjectCard";
+import { useLanguage } from "../context/LanguageContext";
 
 function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
   const dragStart = useRef(null);
+  const { language } = useLanguage();
   const base = import.meta.env.BASE_URL;
 
   const previousProject = () => {
@@ -88,9 +90,6 @@ function Projects() {
       className="relative overflow-hidden bg-white text-black"
     >
 
-      {/* ========================================
-          BACKGROUND GRILLE UNIQUE
-      ======================================== */}
       <div
         className="absolute left-0 top-0 h-[850px] w-full sm:h-[950px] lg:h-[1050px]"
         style={{
@@ -101,30 +100,25 @@ function Projects() {
         }}
       />
 
-
-      {/* ========================================
-          PROJETS
-      ======================================== */}
       <div className="relative z-10 px-6 pt-40 pb-20 lg:px-20 lg:pt-52 lg:pb-24">
 
         <div className="mx-auto w-full max-w-[1600px]">
 
-          {/* Titre */}
           <div className="relative mb-4 w-fit">
+
             <h2 className="font-archivo text-[48px] font-black italic leading-none tracking-[-0.05em] lg:text-[60px]">
-              PROJETS
+              {language === "fr" ? "PROJETS" : "PROJECTS"}
             </h2>
 
             <span
               className="absolute left-1/2 top-1/2 whitespace-nowrap font-burgues text-[70px] leading-none text-[#6A00FF] lg:text-[60px]"
               style={{ transform: "translate(-50%, -50%)" }}
             >
-              Mes
+              {language === "fr" ? "Mes" : "My"}
             </span>
+
           </div>
 
-
-          {/* Carousel */}
           <div
             className="relative mx-auto h-[330px] w-full touch-pan-y select-none sm:h-[400px] lg:h-[460px]"
             style={{
@@ -135,6 +129,7 @@ function Projects() {
             onPointerDown={handlePointerDown}
             onPointerUp={handlePointerUp}
           >
+
             {projects.map((project, index) => (
               <ProjectCard
                 key={project.id}
@@ -153,17 +148,21 @@ function Projects() {
                 }}
               />
             ))}
+
           </div>
 
-
-          {/* Points */}
           <div className="flex items-center justify-center gap-2">
+
             {projects.map((project, index) => (
               <button
                 key={project.id}
                 type="button"
                 onClick={() => setActiveIndex(index)}
-                aria-label={`Afficher le projet ${index + 1}`}
+                aria-label={
+                  language === "fr"
+                    ? `Afficher le projet ${index + 1}`
+                    : `Show project ${index + 1}`
+                }
                 className={`h-2 w-2 rounded-full transition-all duration-300 ${
                   activeIndex === index
                     ? "bg-[#6A00FF]"
@@ -171,15 +170,13 @@ function Projects() {
                 }`}
               />
             ))}
+
           </div>
 
         </div>
+
       </div>
 
-
-      {/* ========================================
-          DÉGRADÉ VERS CONTACT
-      ======================================== */}
       <div className="relative z-10 h-[450px] bg-gradient-to-b from-transparent via-[#c8a5ff] to-[#6A00FF] sm:h-[520px] lg:h-[600px]" />
 
     </section>

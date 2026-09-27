@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 function ProjectIdentity({ project }) {
   const [colorsOpen, setColorsOpen] = useState(false);
+  const { language } = useLanguage();
 
   const getTextColor = (hex) => {
     const darkColors = [
@@ -48,7 +50,11 @@ function ProjectIdentity({ project }) {
     <button
       type="button"
       onClick={() => setColorsOpen(true)}
-      aria-label="Afficher toutes les couleurs"
+      aria-label={
+        language === "fr"
+          ? "Afficher toutes les couleurs"
+          : "Show all colors"
+      }
       className={`group flex aspect-[0.48] cursor-pointer items-center justify-center rounded-tl-[999px] rounded-br-[999px] border border-white bg-black transition-colors duration-300 hover:bg-[#6A00FF] ${className}`}
     >
       <span className="font-archivo text-[40px] font-light leading-none transition-transform duration-300 group-hover:rotate-90 lg:text-[50px]">
@@ -83,14 +89,14 @@ function ProjectIdentity({ project }) {
           <button
             type="button"
             onClick={() => setColorsOpen(false)}
-            aria-label="Fermer"
+            aria-label={language === "fr" ? "Fermer" : "Close"}
             className="absolute right-6 top-5 cursor-pointer font-archivo text-[30px] font-light text-white transition-colors duration-200 hover:text-[#6A00FF]"
           >
             ×
           </button>
 
           <h3 className="mb-10 text-center font-archivo text-lg font-bold italic text-[#6A00FF] lg:text-xl">
-            [ Toutes les couleurs ]
+            [ {language === "fr" ? "Toutes les couleurs" : "All Colors"} ]
           </h3>
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
@@ -119,21 +125,21 @@ function ProjectIdentity({ project }) {
 
           <div className="relative mb-[70px] w-fit">
             <h2 className="font-archivo text-[42px] font-black italic uppercase leading-none tracking-[-0.04em] sm:text-[50px] lg:text-[60px]">
-              L’IDENTITÉ
+              {language === "fr" ? "L’IDENTITÉ" : "IDENTITY"}
             </h2>
 
             <span
               className="absolute left-1/2 top-1/2 whitespace-nowrap font-burgues text-[65px] leading-none text-[#6A00FF] sm:text-[75px] lg:text-[85px]"
               style={{ transform: "translate(-50%, -50%)" }}
             >
-              Visuel
+              {language === "fr" ? "Visuel" : "Visual"}
             </span>
           </div>
 
           <div className="mb-24 lg:mb-32">
 
             <h3 className="mb-12 text-center text-sm font-bold italic text-[#6A00FF] sm:text-base lg:text-xl">
-              [ Typographie ]
+              [ {language === "fr" ? "Typographie" : "Typography"} ]
             </h3>
 
             <div className="flex justify-center">
@@ -158,7 +164,7 @@ function ProjectIdentity({ project }) {
           <div>
 
             <h3 className="mb-12 text-center text-sm font-bold italic text-[#6A00FF] sm:text-base lg:text-xl">
-              [ Couleurs ]
+              [ {language === "fr" ? "Couleurs" : "Colors"} ]
             </h3>
 
             <MobileColors />
@@ -198,38 +204,46 @@ function ProjectIdentity({ project }) {
         <div className="mx-auto w-full max-w-[1600px]">
 
           <div className="relative mb-[70px] w-fit">
+
             <h2 className="font-archivo text-[42px] font-black italic uppercase leading-none tracking-[-0.04em] sm:text-[50px] lg:text-[60px]">
-              L’IDENTITÉ
+              {language === "fr" ? "L’IDENTITÉ" : "IDENTITY"}
             </h2>
 
             <span
               className="absolute left-1/2 top-1/2 whitespace-nowrap font-burgues text-[65px] leading-none text-[#6A00FF] sm:text-[75px] lg:text-[85px]"
               style={{ transform: "translate(-50%, -50%)" }}
             >
-              Visuel
+              {language === "fr" ? "Visuel" : "Visual"}
             </span>
+
           </div>
 
           <div className="mb-24 grid grid-cols-1 gap-16 lg:mb-32 lg:grid-cols-2 lg:items-center lg:gap-24">
 
             <div>
+
               <h3 className="mb-8 text-sm font-bold italic text-[#6A00FF] sm:text-base lg:text-xl">
-                [ Direction artistique ]
+                [ {language === "fr" ? "Direction artistique" : "Art Direction"} ]
               </h3>
 
               <p className="max-w-[600px] text-[11px] leading-[1.6] text-white/70 sm:text-xs lg:text-sm">
-                {project.identity.description}
+                {typeof project.identity.description === "string"
+                  ? project.identity.description
+                  : project.identity.description[language]}
               </p>
+
             </div>
 
             <div>
+
               <h3 className="mb-8 text-sm font-bold italic text-[#6A00FF] sm:text-base lg:text-xl">
-                [ Typographie ]
+                [ {language === "fr" ? "Typographie" : "Typography"} ]
               </h3>
 
               <div className="flex flex-col items-start">
                 {project.identity.fonts.map((font) => (
                   <div key={font.name} className={font.className}>
+
                     <p className="mb-3 text-xl font-medium uppercase lg:text-2xl">
                       {font.name}
                     </p>
@@ -237,9 +251,11 @@ function ProjectIdentity({ project }) {
                     <p className="max-w-[220px] text-[10px] font-medium leading-[1.15] sm:text-xs">
                       {font.alphabet}
                     </p>
+
                   </div>
                 ))}
               </div>
+
             </div>
 
           </div>
@@ -247,8 +263,9 @@ function ProjectIdentity({ project }) {
           <div className="grid grid-cols-1 gap-20 lg:grid-cols-2 lg:items-center lg:gap-24">
 
             <div>
+
               <h3 className="mb-10 text-sm font-bold italic text-[#6A00FF] sm:text-base lg:text-xl">
-                [ Couleurs ]
+                [ {language === "fr" ? "Couleurs" : "Colors"} ]
               </h3>
 
               <MobileColors />
@@ -262,11 +279,13 @@ function ProjectIdentity({ project }) {
                   />
                 ))}
               </div>
+
             </div>
 
             <div>
+
               <h3 className="mb-10 text-sm font-bold italic text-[#6A00FF] sm:text-base lg:text-xl">
-                [ Éléments graphiques ]
+                [ {language === "fr" ? "Éléments graphiques" : "Graphic Elements"} ]
               </h3>
 
               <div className="grid grid-cols-4 gap-4 sm:max-w-[600px] sm:gap-6 lg:gap-8">
@@ -283,6 +302,7 @@ function ProjectIdentity({ project }) {
                   </div>
                 ))}
               </div>
+
             </div>
 
           </div>
@@ -302,22 +322,24 @@ function ProjectIdentity({ project }) {
       <div className="mx-auto w-full max-w-[1600px]">
 
         <div className="relative mb-[38px] w-fit">
+
           <h2 className="font-archivo text-[42px] font-black italic uppercase leading-none tracking-[-0.04em] sm:text-[50px] lg:text-[60px]">
-            L’IDENTITÉ
+            {language === "fr" ? "L’IDENTITÉ" : "IDENTITY"}
           </h2>
 
           <span
             className="absolute left-1/2 top-1/2 whitespace-nowrap font-burgues text-[65px] leading-none text-[#6A00FF] sm:text-[75px] lg:text-[85px]"
             style={{ transform: "translate(-50%, -50%)" }}
           >
-            Visuel
+            {language === "fr" ? "Visuel" : "Visual"}
           </span>
+
         </div>
 
         <div className="mb-24 lg:mb-32">
 
           <h3 className="mb-12 text-center text-sm font-bold italic text-[#6A00FF] sm:text-base lg:text-xl">
-            [ Typographies ]
+            [ {language === "fr" ? "Typographies" : "Typography"} ]
           </h3>
 
           <div className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-14 sm:grid-cols-2 lg:gap-32">
@@ -342,7 +364,7 @@ function ProjectIdentity({ project }) {
         <div>
 
           <h3 className="mb-12 text-center text-sm font-bold italic text-[#6A00FF] sm:text-base lg:text-xl">
-            [ Couleurs ]
+            [ {language === "fr" ? "Couleurs" : "Colors"} ]
           </h3>
 
           <MobileColors />
