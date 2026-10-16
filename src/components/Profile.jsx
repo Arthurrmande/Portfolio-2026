@@ -68,7 +68,7 @@ function Profile() {
           <div className="flex flex-col items-center">
 
             <img
-              src={`${base}images/logo_spiderman.png`}
+              src={`${base}images/logo_spiderman.webp`}
               alt=""
               className="w-[220px] sm:w-[280px] lg:w-[430px]"
             />

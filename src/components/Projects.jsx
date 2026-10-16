@@ -93,7 +93,7 @@ function Projects() {
       <div
         className="absolute left-0 top-0 h-[850px] w-full sm:h-[950px] lg:h-[1050px]"
         style={{
-          backgroundImage: `url('${base}images/background_projects.png')`,
+          backgroundImage: `url('${base}images/background_projects.webp')`,
           backgroundSize: "100% auto",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",

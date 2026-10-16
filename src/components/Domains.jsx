@@ -94,7 +94,7 @@ function Domains() {
           <div className="flex justify-center lg:justify-end">
 
             <img
-              src={`${base}images/diagramme.png`}
+              src={`${base}images/diagramme.webp`}
               alt={
                 language === "fr"
                   ? "Diagramme représentant mes compétences"

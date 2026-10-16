@@ -35,13 +35,13 @@ function Contact() {
         <div className="mb-16 flex flex-col items-start gap-[35px] sm:mb-20 lg:absolute lg:left-[5%] lg:top-[70px] lg:mb-0 lg:gap-[60px]">
 
           <img
-            src={`${base}images/micrographisme_01.png`}
+            src={`${base}images/micrographisme_01.webp`}
             alt=""
             className="h-auto w-[22px] sm:w-[24px] lg:w-[28px]"
           />
 
           <img
-            src={`${base}images/micrographisme_02.png`}
+            src={`${base}images/micrographisme_02.webp`}
             alt=""
             className="h-auto w-[22px] sm:w-[24px] lg:w-[28px]"
           />
@@ -51,7 +51,7 @@ function Contact() {
         <div className="ml-auto w-full max-w-[260px] sm:max-w-[280px] lg:absolute lg:right-[60px] lg:top-[80px] lg:w-fit lg:max-w-none">
 
           <img
-            src={`${base}images/logo_spiderman.png`}
+            src={`${base}images/logo_spiderman.webp`}
             alt=""
             className="mb-[32px] h-auto w-[115px] object-contain sm:w-[130px] lg:mb-[42px] lg:w-[155px]"
           />

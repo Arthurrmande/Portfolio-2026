@@ -136,27 +136,27 @@ const projectPages = [
 
     gallery: {
       top: [
-        `${base}projects/project_01/site smash.png`,
-        `${base}projects/project_01/site smash panier.png`,
+        `${base}projects/project_01/site smash.webp`,
+        `${base}projects/project_01/site smash panier.webp`,
       ],
 
       video: "https://www.youtube.com/embed/egZNkMQG5Oc",
 
       objects: [
-        `${base}projects/project_01/image 67.png`,
-        `${base}projects/project_01/image 63.png`,
-        `${base}projects/project_01/image 61.png`,
-        `${base}projects/project_01/0001 1.png`,
-        `${base}projects/project_01/image 66.png`,
-        `${base}projects/project_01/image 64.png`,
+        `${base}projects/project_01/image 67.webp`,
+        `${base}projects/project_01/image 63.webp`,
+        `${base}projects/project_01/image 61.webp`,
+        `${base}projects/project_01/0001 1.webp`,
+        `${base}projects/project_01/image 66.webp`,
+        `${base}projects/project_01/image 64.webp`,
       ],
 
       bottom: [
-        `${base}projects/project_01/Post.png`,
-        `${base}projects/project_01/Post2.png`,
-        `${base}projects/project_01/Post3.png`,
-        `${base}projects/project_01/Post5.png`,
-        `${base}projects/project_01/Post4.png`,
+        `${base}projects/project_01/Post.webp`,
+        `${base}projects/project_01/Post2.webp`,
+        `${base}projects/project_01/Post3.webp`,
+        `${base}projects/project_01/Post5.webp`,
+        `${base}projects/project_01/Post4.webp`,
       ],
     },
   },
@@ -241,10 +241,10 @@ const projectPages = [
       ],
 
       patterns: [
-        `${base}projects/project_02/pattern_carreau.png`,
-        `${base}projects/project_02/pattern_coeur.png`,
-        `${base}projects/project_02/pattern_pique.png`,
-        `${base}projects/project_02/pattern_trefle.png`,
+        `${base}projects/project_02/pattern_carreau.webp`,
+        `${base}projects/project_02/pattern_coeur.webp`,
+        `${base}projects/project_02/pattern_pique.webp`,
+        `${base}projects/project_02/pattern_trefle.webp`,
       ],
     },
 
@@ -252,27 +252,27 @@ const projectPages = [
       type: "beer",
 
       posters: [
-        `${base}projects/project_02/affiche_01.png`,
-        `${base}projects/project_02/affiche_02.png`,
+        `${base}projects/project_02/affiche_01.webp`,
+        `${base}projects/project_02/affiche_02.webp`,
       ],
 
       bottles: {
         white: [
-          `${base}projects/project_02/bottle_BGauche.png`,
-          `${base}projects/project_02/bottle_BMilieu.png`,
-          `${base}projects/project_02/bottle_BDroit.png`,
+          `${base}projects/project_02/bottle_BGauche.webp`,
+          `${base}projects/project_02/bottle_BMilieu.webp`,
+          `${base}projects/project_02/bottle_BDroit.webp`,
         ],
 
         black: [
-          `${base}projects/project_02/bottle_NGauche.png`,
-          `${base}projects/project_02/bottle_NMilieu.png`,
-          `${base}projects/project_02/bottle_NDroit.png`,
+          `${base}projects/project_02/bottle_NGauche.webp`,
+          `${base}projects/project_02/bottle_NMilieu.webp`,
+          `${base}projects/project_02/bottle_NDroit.webp`,
         ],
 
         red: [
-          `${base}projects/project_02/bottle_RGauche.png`,
-          `${base}projects/project_02/bottle_RMilieu.png`,
-          `${base}projects/project_02/bottle_RDroit.png`,
+          `${base}projects/project_02/bottle_RGauche.webp`,
+          `${base}projects/project_02/bottle_RMilieu.webp`,
+          `${base}projects/project_02/bottle_RDroit.webp`,
         ],
       },
     },
@@ -423,42 +423,42 @@ const projectPages = [
       type: "cards",
 
       mockups: [
-        `${base}projects/project_03/mockup_cartes_01.png`,
-        `${base}projects/project_03/mockup_cartes_02.png`,
+        `${base}projects/project_03/mockup_cartes_01.webp`,
+        `${base}projects/project_03/mockup_cartes_02.webp`,
       ],
 
       cards: [
-        `${base}projects/project_03/Carte 1 recto.png`,
-        `${base}projects/project_03/Carte 2 verso.png`,
-        `${base}projects/project_03/Carte 3 verso.png`,
-        `${base}projects/project_03/Carte 4 recto.png`,
-        `${base}projects/project_03/Carte 5 verso.png`,
-        // `${base}projects/project_03/Carte 6 recto.png`,
-        `${base}projects/project_03/Carte 7 recto.png`,
-        `${base}projects/project_03/Carte 8 recto.png`,
-        `${base}projects/project_03/Carte 9 recto.png`,
-        `${base}projects/project_03/Carte 10 verso.png`,
-        // `${base}projects/project_03/Carte 11 recto.png`,
-        `${base}projects/project_03/Carte 12 verso.png`,
-        // `${base}projects/project_03/Carte 13 verso.png`,
-        `${base}projects/project_03/Carte 14 verso.png`,
-        `${base}projects/project_03/Carte 15 recto.png`,
+        `${base}projects/project_03/Carte 1 recto.webp`,
+        `${base}projects/project_03/Carte 2 verso.webp`,
+        `${base}projects/project_03/Carte 3 verso.webp`,
+        `${base}projects/project_03/Carte 4 recto.webp`,
+        `${base}projects/project_03/Carte 5 verso.webp`,
+        // `${base}projects/project_03/Carte 6 recto.webp`,
+        `${base}projects/project_03/Carte 7 recto.webp`,
+        `${base}projects/project_03/Carte 8 recto.webp`,
+        `${base}projects/project_03/Carte 9 recto.webp`,
+        `${base}projects/project_03/Carte 10 verso.webp`,
+        // `${base}projects/project_03/Carte 11 recto.webp`,
+        `${base}projects/project_03/Carte 12 verso.webp`,
+        // `${base}projects/project_03/Carte 13 verso.webp`,
+        `${base}projects/project_03/Carte 14 verso.webp`,
+        `${base}projects/project_03/Carte 15 recto.webp`,
       ],
 
       cards2: [
-        `${base}projects/project_03/Carte2 2 recto.png`,
-        `${base}projects/project_03/Carte2 3 verso.png`,
-        `${base}projects/project_03/Carte2 4 verso.png`,
-        `${base}projects/project_03/Carte2 5 recto.png`,
-        `${base}projects/project_03/Carte2 6 recto.png`,
-        // `${base}projects/project_03/Carte2 7 recto.png`,
-        `${base}projects/project_03/Carte2 8 recto.png`,
-        // `${base}projects/project_03/Carte2 9 verso.png`,
-        `${base}projects/project_03/Carte2 10 verso.png`,
-        // `${base}projects/project_03/Carte2 11 verso.png`,
-        // `${base}projects/project_03/Carte2 12 recto.png`,
-        `${base}projects/project_03/Carte2 13 recto.png`,
-        `${base}projects/project_03/Carte2 14 verso.png`,
+        `${base}projects/project_03/Carte2 2 recto.webp`,
+        `${base}projects/project_03/Carte2 3 verso.webp`,
+        `${base}projects/project_03/Carte2 4 verso.webp`,
+        `${base}projects/project_03/Carte2 5 recto.webp`,
+        `${base}projects/project_03/Carte2 6 recto.webp`,
+        // `${base}projects/project_03/Carte2 7 recto.webp`,
+        `${base}projects/project_03/Carte2 8 recto.webp`,
+        // `${base}projects/project_03/Carte2 9 verso.webp`,
+        `${base}projects/project_03/Carte2 10 verso.webp`,
+        // `${base}projects/project_03/Carte2 11 verso.webp`,
+        // `${base}projects/project_03/Carte2 12 recto.webp`,
+        `${base}projects/project_03/Carte2 13 recto.webp`,
+        `${base}projects/project_03/Carte2 14 verso.webp`,
       ],
     },
 
@@ -519,7 +519,7 @@ const projectPages = [
 
     gallery: {
       type: "jaeco",
-      overview: `${base}projects/project_04/pages_projets.png`,
+      overview: `${base}projects/project_04/pages_projets.webp`,
     },
   },
 ];
