@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirection — Portfolio</title>
+    <script>
+      const pathSegmentsToKeep = 1;
+      const locationData = window.location;
+
+      const redirectPath = locationData.pathname
+        .split("/")
+        .slice(1 + pathSegmentsToKeep)
+        .join("/")
+        .replace(/&/g, "~and~");
+
+      const basePath = locationData.pathname
+        .split("/")
+        .slice(0, 1 + pathSegmentsToKeep)
+        .join("/");
+
+      locationData.replace(
+        locationData.protocol +
+          "//" +
+          locationData.hostname +
+          (locationData.port ? ":" + locationData.port : "") +
+          basePath +
+          "/?/" +
+          redirectPath +
+          (locationData.search
+            ? "&" + locationData.search.slice(1).replace(/&/g, "~and~")
+            : "") +
+          locationData.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

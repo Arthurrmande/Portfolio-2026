@@ -5,6 +5,31 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio-2026</title>
+
+
+    <script>
+      (function (locationData) {
+        if (locationData.search.startsWith("?/")) {
+          const decoded = locationData.search
+            .slice(2)
+            .split("&")
+            .map((part) => part.replace(/~and~/g, "&"));
+
+          const path = decoded.shift();
+
+          window.history.replaceState(
+            null,
+            "",
+            locationData.pathname.replace(/\/$/, "") +
+              "/" +
+              path +
+              (decoded.length ? "?" + decoded.join("&") : "") +
+              locationData.hash
+          );
+        }
+      })(window.location);
+    </script>
+
   </head>
   <body>
     <div id="root"></div>
