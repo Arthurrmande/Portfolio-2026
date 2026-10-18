@@ -143,7 +143,7 @@ function ProjectContext({ project }) {
 
             <div>
               <h3 className="mb-8 whitespace-nowrap text-sm font-bold italic text-[#6A00FF] sm:text-lg lg:text-[22px]">
-                [ {language === "fr" ? "Domaines" : "Fields"} ]
+                [ {language === "fr" ? "Domaines" : "Areas"} ]
               </h3>
 
               <div className="flex flex-col items-start gap-4">
