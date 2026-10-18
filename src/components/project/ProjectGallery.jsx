@@ -1,4 +1,69 @@
+import { motion } from "motion/react";
+import { useLanguage } from "../../context/LanguageContext";
+
 function ProjectGallery({ project }) {
+  const { language } = useLanguage();
+
+
+if (project.gallery.type === "hiero") {
+  const gallery = project.gallery;
+
+  return (
+    <section id="gallery" className="w-full overflow-hidden bg-black">
+
+      <div className="w-full">
+        <img
+          src={gallery.overview}
+          alt={language === "fr" ? "Les quatre flyers de la Fédération Hiero" : "The four Hiero Federation flyers"}
+          className="block h-auto w-full"
+        />
+      </div>
+
+      <div className="grid w-full grid-cols-5">
+
+        <div className="col-span-3 overflow-hidden">
+          <img
+            src={gallery.horizontal}
+            alt={language === "fr" ? "Affiche horizontale Fédération Hiero" : "Hiero Federation horizontal poster"}
+            loading="lazy"
+            className="block h-full w-full object-cover"
+          />
+        </div>
+
+        <div className="col-span-2 overflow-hidden">
+          <img
+            src={gallery.flyers[0]}
+            alt={language === "fr" ? "Flyer bleu Fédération Hiero" : "Hiero Federation blue flyer"}
+            loading="lazy"
+            className="block h-full w-full object-cover"
+          />
+        </div>
+
+        <div className="col-span-2 overflow-hidden">
+          <img
+            src={gallery.vertical}
+            alt={language === "fr" ? "Affiche verticale Fédération Hiero" : "Hiero Federation vertical poster"}
+            loading="lazy"
+            className="block h-full w-full object-cover"
+          />
+        </div>
+
+        <div className="col-span-3 overflow-hidden">
+          <img
+            src={gallery.flyers[1]}
+            alt={language === "fr" ? "Flyer jaune Fédération Hiero" : "Hiero Federation yellow flyer"}
+            loading="lazy"
+            className="block h-full w-full object-cover"
+          />
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
+
+
   if (project.gallery.type === "jaeco") {
     return (
       <section id="gallery" className="w-full overflow-hidden bg-black">

@@ -42,26 +42,11 @@ const projectPages = [
     ],
 
     domains: [
-      {
-        fr: "UX/UI design",
-        en: "UX/UI design",
-      },
-      {
-        fr: "Motion design",
-        en: "Motion design",
-      },
-      {
-        fr: "3D",
-        en: "3D",
-      },
-      {
-        fr: "Communication",
-        en: "Communication",
-      },
-      {
-        fr: "Développement",
-        en: "Development",
-      },
+      { fr: "UX/UI design", en: "UX/UI design" },
+      { fr: "Motion design", en: "Motion design" },
+      { fr: "3D", en: "3D" },
+      { fr: "Communication", en: "Communication" },
+      { fr: "Développement", en: "Development" },
     ],
 
     identity: {
@@ -81,56 +66,16 @@ const projectPages = [
       ],
 
       colors: [
-        {
-          hex: "#000000",
-          rgb: "r 0 / v 0 / b 0",
-          name: "Black",
-        },
-        {
-          hex: "#B0B0B0",
-          rgb: "r 176 / v 176 / b 176",
-          name: "Silver",
-        },
-        {
-          hex: "#FFFFFF",
-          rgb: "r 255 / v 255 / b 255",
-          name: "White",
-        },
-        {
-          hex: "#00D542",
-          rgb: "r 0 / v 213 / b 66",
-          name: "Malachite",
-        },
-        {
-          hex: "#0083F1",
-          rgb: "r 0 / v 131 / b 241",
-          name: "Azure Blue",
-        },
-        {
-          hex: "#55DFDD",
-          rgb: "r 85 / v 223 / b 221",
-          name: "Pearl Aqua",
-        },
-        {
-          hex: "#D62828",
-          rgb: "r 214 / v 40 / b 40",
-          name: "Flag Red",
-        },
-        {
-          hex: "#F79B00",
-          rgb: "r 247 / v 155 / b 0",
-          name: "Amber Glow",
-        },
-        {
-          hex: "#F7B500",
-          rgb: "r 247 / v 181 / b 0",
-          name: "Amber Flame",
-        },
-        {
-          hex: "#E2E200",
-          rgb: "r 226 / v 226 / b 0",
-          name: "Lemon Lime",
-        },
+        { hex: "#000000", rgb: "r 0 / v 0 / b 0", name: "Black" },
+        { hex: "#B0B0B0", rgb: "r 176 / v 176 / b 176", name: "Silver" },
+        { hex: "#FFFFFF", rgb: "r 255 / v 255 / b 255", name: "White" },
+        { hex: "#00D542", rgb: "r 0 / v 213 / b 66", name: "Malachite" },
+        { hex: "#0083F1", rgb: "r 0 / v 131 / b 241", name: "Azure Blue" },
+        { hex: "#55DFDD", rgb: "r 85 / v 223 / b 221", name: "Pearl Aqua" },
+        { hex: "#D62828", rgb: "r 214 / v 40 / b 40", name: "Flag Red" },
+        { hex: "#F79B00", rgb: "r 247 / v 155 / b 0", name: "Amber Glow" },
+        { hex: "#F7B500", rgb: "r 247 / v 181 / b 0", name: "Amber Flame" },
+        { hex: "#E2E200", rgb: "r 226 / v 226 / b 0", name: "Lemon Lime" },
       ],
     },
 
@@ -192,19 +137,11 @@ const projectPages = [
       },
     },
 
-    software: [
-      "Illustrator",
-    ],
+    software: ["Illustrator"],
 
     domains: [
-      {
-        fr: "Print design",
-        en: "Print design",
-      },
-      {
-        fr: "Identité visuelle",
-        en: "Visual identity",
-      },
+      { fr: "Print design", en: "Print design" },
+      { fr: "Identité visuelle", en: "Visual identity" },
     ],
 
     identity: {
@@ -223,21 +160,9 @@ const projectPages = [
       ],
 
       colors: [
-        {
-          hex: "#F6383F",
-          rgb: "r 246 / v 56 / b 63",
-          name: "Red",
-        },
-        {
-          hex: "#1A1A18",
-          rgb: "r 26 / v 26 / b 24",
-          name: "Black",
-        },
-        {
-          hex: "#FBFBFB",
-          rgb: "r 251 / v 251 / b 251",
-          name: "White",
-        },
+        { hex: "#F6383F", rgb: "r 246 / v 56 / b 63", name: "Red" },
+        { hex: "#1A1A18", rgb: "r 26 / v 26 / b 24", name: "Black" },
+        { hex: "#FBFBFB", rgb: "r 251 / v 251 / b 251", name: "White" },
       ],
 
       patterns: [
@@ -309,23 +234,12 @@ const projectPages = [
       },
     },
 
-    software: [
-      "Illustrator",
-    ],
+    software: ["Illustrator"],
 
     domains: [
-      {
-        fr: "Illustration",
-        en: "Illustration",
-      },
-      {
-        fr: "Print design",
-        en: "Print design",
-      },
-      {
-        fr: "Identité visuelle",
-        en: "Visual identity",
-      },
+      { fr: "Illustration", en: "Illustration" },
+      { fr: "Print design", en: "Print design" },
+      { fr: "Identité visuelle", en: "Visual identity" },
     ],
 
     identity: {
@@ -341,81 +255,21 @@ const projectPages = [
       ],
 
       colors: [
-        {
-          hex: "#E12114",
-          rgb: "r 225 / v 33 / b 20",
-          name: "Burnt Tangerine",
-        },
-        {
-          hex: "#0D7CB1",
-          rgb: "r 13 / v 124 / b 177",
-          name: "Cerulean",
-        },
-        {
-          hex: "#AF66A6",
-          rgb: "r 175 / v 102 / b 166",
-          name: "Petal Pink",
-        },
-        {
-          hex: "#6E8D2C",
-          rgb: "r 110 / v 141 / b 44",
-          name: "Forest Moss",
-        },
-        {
-          hex: "#DECB19",
-          rgb: "r 222 / v 203 / b 25",
-          name: "Golden Glow",
-        },
-        {
-          hex: "#334A9A",
-          rgb: "r 51 / v 74 / b 154",
-          name: "French Blue",
-        },
-        {
-          hex: "#DE1B7B",
-          rgb: "r 222 / v 27 / b 123",
-          name: "Fuchsia Flame",
-        },
-        {
-          hex: "#59B031",
-          rgb: "r 89 / v 176 / b 49",
-          name: "Bright Fern",
-        },
-        {
-          hex: "#714394",
-          rgb: "r 113 / v 67 / b 148",
-          name: "Rebecca Purple",
-        },
-        {
-          hex: "#DEA517",
-          rgb: "r 222 / v 165 / b 23",
-          name: "Goldenrod",
-        },
-        {
-          hex: "#58BFC6",
-          rgb: "r 88 / v 191 / b 198",
-          name: "Strong Cyan",
-        },
-        {
-          hex: "#B9CE00",
-          rgb: "r 185 / v 206 / b 0",
-          name: "Lemon Lime",
-        },
-        {
-          hex: "#DE6B18",
-          rgb: "r 222 / v 107 / b 24",
-          name: "Chocolate",
-        },
-        {
-          hex: "#335AA6",
-          rgb: "r 51 / v 90 / b 166",
-          name: "Sapphire",
-        },
-        {
-          hex: "#7B4494",
-          rgb: "r 123 / v 68 / b 148",
-          name: "Deep Lilac",
-        },
+        { hex: "#E12114", rgb: "r 225 / v 33 / b 20", name: "Burnt Tangerine" },
+        { hex: "#0D7CB1", rgb: "r 13 / v 124 / b 177", name: "Cerulean" },
+        { hex: "#AF66A6", rgb: "r 175 / v 102 / b 166", name: "Petal Pink" },
+        { hex: "#6E8D2C", rgb: "r 110 / v 141 / b 44", name: "Forest Moss" },
+        { hex: "#DECB19", rgb: "r 222 / v 203 / b 25", name: "Golden Glow" },
+        { hex: "#334A9A", rgb: "r 51 / v 74 / b 154", name: "French Blue" },
+        { hex: "#DE1B7B", rgb: "r 222 / v 27 / b 123", name: "Fuchsia Flame" },
+        { hex: "#59B031", rgb: "r 89 / v 176 / b 49", name: "Bright Fern" },
+        { hex: "#714394", rgb: "r 113 / v 67 / b 148", name: "Rebecca Purple" },
+        { hex: "#DEA517", rgb: "r 222 / v 165 / b 23", name: "Goldenrod" },
+        { hex: "#58BFC6", rgb: "r 88 / v 191 / b 198", name: "Strong Cyan" },
+        { hex: "#B9CE00", rgb: "r 185 / v 206 / b 0", name: "Lemon Lime" },
+        { hex: "#DE6B18", rgb: "r 222 / v 107 / b 24", name: "Chocolate" },
+        { hex: "#335AA6", rgb: "r 51 / v 90 / b 166", name: "Sapphire" },
+        { hex: "#7B4494", rgb: "r 123 / v 68 / b 148", name: "Deep Lilac" },
       ],
     },
 
@@ -461,7 +315,6 @@ const projectPages = [
         `${base}projects/project_03/Carte2 14 verso.webp`,
       ],
     },
-
   },
 
   {
@@ -503,23 +356,69 @@ const projectPages = [
     ],
 
     domains: [
-      {
-        fr: "Web design",
-        en: "Web design",
-      },
-      {
-        fr: "UI design",
-        en: "UI design",
-      },
-      {
-        fr: "Motion design",
-        en: "Motion design",
-      },
+      { fr: "Web design", en: "Web design" },
+      { fr: "UI design", en: "UI design" },
+      { fr: "Motion design", en: "Motion design" },
     ],
 
     gallery: {
       type: "jaeco",
       overview: `${base}projects/project_04/pages_projets.webp`,
+    },
+  },
+
+  {
+    id: 6,
+    number: "06",
+
+    title: {
+      fr: "FLYERS FÉDÉRATION HIERO",
+      en: "HIERO FEDERATION FLYERS",
+    },
+
+    context: {
+      identity: {
+        fr: "Création de quatre illustrations pour les flyers de la Fédération Hiero",
+        en: "Creation of four illustrations for the Hiero Federation's flyers",
+      },
+
+      client: {
+        fr: "Projet universitaire fictif",
+        en: "Fictional university project",
+      },
+
+      description: {
+        fr: "Réalisation de quatre visuels pour les flyers trimestriels de la Fédération Hiero, consacrés à sa programmation musicale 2026. Le projet consistait à détourner des références à la pop culture pour créer des personnages hybrides, étranges et décalés. Chaque illustration a été réalisée sur Photoshop, principalement à l’aide de l’outil Plume.",
+        en: "Creation of four visuals for the Hiero Federation's quarterly flyers promoting its 2026 music programme. The project involved reimagining pop culture references as unusual, playful and quirky hybrid characters. Each illustration was created in Photoshop, mainly using the Pen Tool.",
+      },
+
+      challenge: {
+        fr: "Détourner des références à la pop culture tout en conservant des éléments reconnaissables. Créer quatre illustrations cohérentes avec l’univers graphique des flyers habituels de Hiero, en intégrant une référence à Limoges, tout en conservant une approche originale, amusante et intrigante.",
+        en: "Reinterpret pop culture references while keeping them recognisable. Create four illustrations consistent with the visual style of Hiero's existing flyers, incorporating a reference to Limoges while maintaining an original, playful and intriguing approach.",
+      },
+    },
+
+    software: ["Photoshop"],
+
+    domains: [
+      { fr: "Illustration", en: "Illustration" },
+      { fr: "Print design", en: "Print design" },
+      { fr: "Communication visuelle", en: "Visual communication" },
+    ],
+
+    gallery: {
+      type: "hiero",
+
+      overview: `${base}projects/project_06/Flyers-par-4.webp`,
+
+      horizontal: `${base}projects/project_06/affiche-flyer-rouge.webp`,
+
+      vertical: `${base}projects/project_06/affiche-flyer-vert.webp`,
+
+      flyers: [
+        `${base}projects/project_06/flyer-bleu.webp`,
+        `${base}projects/project_06/flyer-jaune.webp`,
+      ],
     },
   },
 ];
